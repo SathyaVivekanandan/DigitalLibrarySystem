@@ -1,9 +1,15 @@
 import java.util.*;
 public class Library {
     ArrayList<Book> books=new ArrayList<>();
-public void addBook(Book book){
+public void addBook(Book book) {
+    for (Book b : books) {
+        if (b.id == book.id) {
+            System.out.println("Book ID already exists. Please use a different ID.");
+            return;
+        }
+    }
     books.add(book);
-    System.out.println("Book Added Succesfully");
+    System.out.println("Book Added Successfully");
 }
 public void viewBooks(){
     if(books.isEmpty()){
