@@ -1,6 +1,7 @@
 import java.util.*;
 public class Library {
     ArrayList<Book> books=new ArrayList<>();
+    ArrayList<User> users = new ArrayList<>();
 public void addBook(Book book) {
     for (Book b : books) {
         if (b.id == book.id) {
@@ -76,5 +77,30 @@ public void deleteBook(int id){
         }
     }
     System.out.println("Book Not Found");
+}
+public void addUser(User user) {
+
+    for (User u : users) {
+        if (u.userId == user.userId) {
+            System.out.println("User ID already exists.");
+            return;
+        }
+    }
+
+    users.add(user);
+    System.out.println("User Added Successfully");
+}
+
+public void viewUsers() {
+
+    if (users.isEmpty()) {
+        System.out.println("No users available.");
+        return;
+    }
+
+    for (User u : users) {
+        u.displayUser();
+        System.out.println("-------------------");
+    }
 }
 }

@@ -11,7 +11,9 @@ public class Main {
             System.out.println("4. Issue Book");
             System.out.println("5. Return Book");
             System.out.println("6. Delete Book");
-            System.out.println("7. Exit");
+            System.out.println("7. Add User");
+            System.out.println("8. View Users");
+            System.out.println("9. Exit");
             System.out.println("Enter Choice:");
             int choice =sc.nextInt();
             switch(choice){
@@ -50,8 +52,26 @@ public class Main {
                     library.deleteBook(deleteId);
                     break;
                 case 7:
-                    System.exit(0);
+                    System.out.print("Enter User ID: ");
+                    int userId = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Enter User Name: ");
+                    String userName = sc.nextLine();
+
+                    User user = new User(userId, userName);
+                    library.addUser(user);
+                    break;
+
+                case 8:
+                    library.viewUsers();
+                    break;
+
+                case 9:
+                    System.out.println("Thank you for using Digital Library System.");
                     sc.close();
+                    System.exit(0);
+                    break;
                 default:
                     System.out.println("Invalid Choice");
             }
