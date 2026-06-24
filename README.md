@@ -1,47 +1,60 @@
 # DigitalLibrarySystem
-A console-based Digital Library System developed using Java.
-## Features
+
+A console-based Digital Library System developed using Java. This application helps manage library books, book availability, issue details, and return details.
+
+## Problem Statement
+
+Manual library management is time-consuming and makes it difficult to track books, users, issued books, and returned books. Searching for a book manually can also take more time. This project provides a simple digital solution using a Java console application.
+
+## Objectives
+
+- Manage library books digitally
+- Reduce manual paperwork
+- Search books quickly
+- Track book availability
+- Manage book issue and return operations
+
+## Functional Requirements
+
 - Add a new book
 - View all available books
-- Search for a book
-- Issue a book
+- Search for a book by title or author
+- Issue a book to a user
 - Return a book
 - Display book availability status
-## Technologies Used
-- Java
-- Object-Oriented Programming (OOP)
-- ArrayList
-- Scanner class
-## Project Structure
-DigitalLibrarySystem/
-│
-├── Book.java
-├── Library.java
-├── Main.java
-└── README.md
-A Java console-based application used to manage library books and users.
+
+## Non-Functional Requirements
+
+- Simple console-based interface
+- Easy to use
+- Fast book search
+- Proper input validation
+- Maintainable Java code using OOP concepts
+
 ## Features
+
 - Add Book
 - View Available Books
 - Search Book by Title or Author
 - Issue Book
 - Return Book
 - Track Book Availability
+
 ## Technologies Used
+
 - Java
-- OOPs Concepts
+- Object-Oriented Programming (OOP)
 - ArrayList / Collections
 - Scanner Class
 - Git and GitHub
-## How to Run
-1. Clone the repository
-2. Open the project in VS Code
-3. Compile the Java files
-4. Run the Main class
-## Future Enhancements
-- MySQL Database Integration
-- Admin Login
-- Student Login
-- GUI using Java Swing or JavaFX
-- Fine calculation for late returns
+- VS Code
 
+## Project Structure
+
+DigitalLibrarySystem/
+│
+├── Book.java
+├── Library.java
+├── Main.java
+├── README.md
+└── .gitignore
